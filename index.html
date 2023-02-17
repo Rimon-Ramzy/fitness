@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./dist/main.css">
+</head>
+
+<body class="relative">
+  <header class="bg-color-dark1 dark:bg-darkbg-light1">
+    <div class="container">
+      <nav class="flex justify-between items-center py-7 relative">
+        <h1 class="logo text-color-light1 font-bold text-xl dark:text-darkbg-font1">WORKOUT</h1>
+        <div class="flex justify-between items-center">
+          <span id="drakLightMob" class="mr-4 text-color-light1 dark:text-darkbg-font1 hidden"><i
+              class="fa-solid fa-circle-half-stroke"></i></span>
+          <i class="fa-solid fa-bars text-color-light1 dark:text-darkbg-font1 sm:hidden text-[23px]" id="bars"></i>
+          <ul class="sm:flex sm:justify-between hidden text-color-light1 dark:text-darkbg-font1" id="navbar">
+            <li class=""><a href="">WORKOUTS</a></li>
+            <li><a href="">PROGRAMS</a></li>
+            <li><a href="">HEALTHY LIVING</a></li>
+            <li><a href="">COMMUNITY</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">STORE</a></li>
+            <li id="drakLight" class="mr-4 text-color-light1 dark:text-darkbg-font1"><i
+                class="fa-solid fa-circle-half-stroke"></i></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-address mt-10 mx-auto">
+        <div class="run-card rounded-xl bg-color-primary2 z-10">
+          <div class="image flex justify-center align-middle bg-color-primary3 rounded-full mb-3">
+            <img src="./images/logos/running-stick-figure-svgrepo-com 1.svg" alt="">
+          </div>
+          <p class="text-color">4,95<span class="ml-2">km</span></p>
+        </div>
+        <div class="video-card flex justify-between items-center bg-color-dark2 rounded-xl z-10">
+          <div class="image flex justify-center align-middle bg-color-primary2 rounded-full mr-3">
+            <img src="./images/logos/Polygon 1.svg" alt="">
+          </div>
+          <div class="content">
+            <span class="text-color-light1">350+</span>
+            <p class="text-color-dark3">Video tutorial</p>
+          </div>
+        </div>
+        <div class="free-card bg-color-primary4 rounded-xl z-10">
+          <span class="text-color-light1">500+</span>
+          <p class="text-color-dark3">Free Workout Videos</p>
+        </div>
+        <h2 class="text-color-light1 uppercase dark:text-darkbg-font3">workout with me</h2>
+        <img src="./images/Images 2.png" alt="" class="header-img">
+        <p class="description my-5 text-color-dark3 dark:text-darkbg-font2">A huge selection of health and fitness
+          content, healthy recipes and
+          transformation
+          stories
+          to help you get fit and stay
+          fit!
+        </p>
+        <button class="text-color-light1 bg-color-primary2 rounded-lg mb-24 py-5 px-5"><a href="">Join Club
+            Now!</a></button>
+        <div class="logos">
+          <h6 class="text-color-dark3 mb-4">AS FEATURED IN</h6>
+          <div class="logos-images flex justify-between flex-wrap">
+            <span class="pb-3 px-5">
+              <svg width="50" class="sm:w-[50px] w-[40px]" height="20" viewBox="0 0 58 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M57.1361 0L15.3361 17.8C11.8694 19.2667 8.95834 20 6.60278 20C3.93611 20 2.00278 19.0667 0.802778 17.2C0.0472222 16 -0.175 14.4778 0.136111 12.6333C0.447222 10.7889 1.26944 8.82222 2.60278 6.73333C3.71389 5.04444 5.53611 2.82222 8.06945 0.0666666C7.18056 1.48889 6.55834 2.95556 6.20278 4.46667C5.53611 7.31111 6.13611 9.4 8.00278 10.7333C8.89167 11.3556 10.1139 11.6667 11.6694 11.6667C12.9139 11.6667 14.3139 11.4667 15.8694 11.0667L57.1361 0Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+              </svg>
+            </span>
+            <span class="pb-3 px-5">
+              <svg width="75" class="sm:w-[75px] w-[50px]" height="20" viewBox="0 0 121 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.9723 10.2867C12.9151 10.3598 13.7348 10.7601 14.4352 11.4835C15.1318 12.2109 15.482 13.2076 15.482 14.4776C15.482 16.0362 14.9663 17.2792 13.9311 18.2067C12.8959 19.1303 11.4104 19.5959 9.46697 19.5959H0V1.36232H9.44388C11.1141 1.36232 12.4495 1.81643 13.4577 2.72465C14.466 3.63286 14.9663 4.83741 14.9663 6.34212C14.9663 7.48509 14.6507 8.3933 14.0157 9.06292C13.3808 9.73254 12.6996 10.1058 11.9761 10.1789V10.2867H11.9723ZM4.49104 8.89744H8.40867C9.07829 8.89744 9.61321 8.71272 10.0134 8.33943C10.4137 7.96613 10.6138 7.47354 10.6138 6.8578C10.6138 6.29594 10.4175 5.84183 10.0288 5.49548C9.64015 5.14912 9.15525 4.9798 8.57415 4.9798H4.49104V8.89744ZM8.6819 15.9746C9.39 15.9746 9.93647 15.7937 10.329 15.432C10.7177 15.0702 10.914 14.5699 10.914 13.935C10.914 13.3346 10.7138 12.8613 10.3136 12.5072C9.91338 12.1532 9.3977 11.9761 8.76272 11.9761H4.49104V15.9746H8.6819ZM31.0717 19.5921H26.7192V18.2875C25.6301 19.4304 24.2331 20 22.5283 20C20.9312 20 19.6497 19.4766 18.6761 18.4337C17.7063 17.3908 17.2214 16.0169 17.2214 14.3121V5.93419H21.547V13.3885C21.547 14.1851 21.7663 14.8355 22.2012 15.3358C22.6361 15.8361 23.1979 16.0824 23.8868 16.0824C24.7758 16.0824 25.4685 15.7706 25.9687 15.1434C26.469 14.5161 26.7153 13.5617 26.7153 12.2725V5.93419H31.0678V19.5921H31.0717ZM44.4794 19.5921H32.9535V18.7724L38.372 9.39003H33.0882V5.93419H44.4139V6.7539L38.9954 16.1362H44.4794V19.5921ZM57.8871 19.5921H46.3612V18.7724L51.7797 9.39003H46.4921V5.93419H57.8178V6.7539L52.3993 16.1362H57.8832V19.5921H57.8871ZM64.36 9.14374H72.2337V13.0614H64.36V19.5921H59.869V1.36232H72.9572V5.30691H64.36V9.14374ZM104.133 13.8772H94.1194C94.3772 15.5705 95.6433 16.5172 97.5598 16.5172C99.0684 16.5172 100.558 15.9246 101.674 15.0664L103.344 17.9604C101.816 19.2727 99.8342 20 97.5598 20C92.9803 20 89.8477 17.2099 89.8477 12.7612C89.8477 10.6561 90.5481 8.92438 91.9412 7.56205C93.3382 6.19973 95.0507 5.52242 97.0826 5.52242C99.0607 5.52242 100.719 6.18434 102.062 7.50818C103.405 8.83202 104.094 10.583 104.129 12.7612V13.8772H104.133ZM95.3162 9.63248C94.7736 10.0135 94.4003 10.5407 94.2002 11.2103H99.8342C99.6341 10.5022 99.2916 9.96729 98.799 9.60554C98.3102 9.24379 97.7368 9.06292 97.0865 9.06292C96.4515 9.06292 95.8627 9.25149 95.3162 9.63248ZM88.2121 13.8772H78.1987C78.4566 15.5705 79.7227 16.5172 81.6391 16.5172C83.1477 16.5172 84.637 15.9246 85.753 15.0664L87.4232 17.9604C85.8954 19.2727 83.9135 20 81.6391 20C77.0596 20 73.927 17.2099 73.927 12.7612C73.927 10.6561 74.6274 8.92438 76.0205 7.56205C77.4175 6.19973 79.13 5.52242 81.1619 5.52242C83.14 5.52242 84.7986 6.18434 86.1417 7.50818C87.4848 8.83202 88.1737 10.583 88.2083 12.7612V13.8772H88.2121ZM79.3955 9.63248C78.8529 10.0135 78.4796 10.5407 78.2795 11.2103H83.9135C83.7134 10.5022 83.3709 9.96729 82.8783 9.60554C82.3896 9.24379 81.8162 9.06292 81.1658 9.06292C80.527 9.06292 79.9382 9.25149 79.3955 9.63248ZM120.977 19.5921H116.625V18.503C115.516 19.4997 114.104 20 112.38 20C110.529 20 108.955 19.3227 107.658 17.9719C106.361 16.6211 105.711 14.8817 105.711 12.7612C105.711 10.6561 106.361 8.92438 107.658 7.56205C108.955 6.19973 110.529 5.52242 112.38 5.52242C114.104 5.52242 115.52 6.02271 116.625 7.01943V0H120.977V19.5921ZM115.632 15.3088C116.294 14.6469 116.625 13.8003 116.625 12.7651C116.625 11.7491 116.294 10.9063 115.632 10.2328C114.97 9.56321 114.185 9.22455 113.277 9.22455C112.314 9.22455 111.526 9.55551 110.91 10.2174C110.294 10.8794 109.986 11.726 109.986 12.7612C109.986 13.8118 110.294 14.6662 110.91 15.3204C111.526 15.9746 112.314 16.3017 113.277 16.3017C114.185 16.3017 114.97 15.9708 115.632 15.3088Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+              </svg>
+            </span>
+            <span class="pb-3 px-5">
+              <svg width="70" class="sm:w-[70px] w-[48px]" height="20" viewBox="0 0 89 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M32.3842 14.1795C32.3842 11.1795 30.897 9.53848 25.5124 8.66661L25.5124 10.7949C29.2303 11.4359 30.1791 12.4102 30.1534 14.2564C30.1278 16.0256 28.8457 17.8205 24.7688 17.8205C21.3329 17.8205 19.3586 16 18.9483 13.4615H16.4611C16.7688 16.5897 19.3842 20 24.6919 20C30.1021 20 32.3842 16.9744 32.3842 14.1795ZM17.0508 5.43591C17.0508 9.25638 20.5123 10.3846 23.3841 10.641L23.3841 8.48713C21.0252 8.17945 19.2816 7.33335 19.2816 5.4615C19.2816 3.61529 21.1021 2.17945 24.1021 2.17945C26.7944 2.17945 28.5892 3.51279 29.0251 5.5897H31.5893C31.3586 3.359 29.2047 0 24.1021 0C20.2559 0 17.0508 2.10251 17.0508 5.43591ZM0 0.384725V2.61543H14.0513V0.384725H0ZM14.0513 8.89754H0V11.1027H14.0513V8.89754ZM14.0513 17.3847H0V19.6155H14.0513V17.3847ZM37.3326 0.384725V19.6155H35.1019V0.384725H37.3326ZM39.4609 2.61543V0.384725H43.23C46.8455 0.384725 49.1531 2.64111 49.1531 5.74369C49.1531 8.84627 46.7173 11.1027 43.23 11.1027H39.4609V8.87183H43.23C45.6147 8.87183 46.9224 7.58985 46.9224 5.74367C46.9224 3.89749 45.6147 2.61541 43.23 2.61541L39.4609 2.61543ZM54.0759 0.384725H51.8451V19.6155H54.0759V0.384725ZM66.4605 5.74369C66.4605 2.64111 64.1528 0.384725 60.5374 0.384725H56.2041V2.61541H60.4605C62.8451 2.61541 64.1015 4.0257 64.1015 5.74367C64.1015 7.48723 62.8451 8.87183 60.4605 8.87183H56.2041V11.1027H60.5374C64.0246 11.1027 66.4605 8.84627 66.4605 5.74369ZM59.8708 13.0257L64.2297 19.6155H67.0246L62.5374 13.0257H59.8708ZM69.6653 0.384725H71.8961V19.6155H69.6653V0.384725ZM74.2802 0.384725V2.61543H88.8443V0.384725H74.2802ZM82.6905 19.6155V4.69235H80.4596V19.6155H82.6905Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+              </svg>
+            </span>
+            <span class="pb-3 px-5">
+              <svg width="70" class="sm:w-[70px] w-[50px]" height="20" viewBox="0 0 44 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.2781 18.5561L14.2959 18.5204L14.3137 18.5561C14.5276 18.9126 14.688 19.1978 14.9554 19.2335C15.205 19.18 15.2585 18.9126 15.3298 18.6452C15.3298 18.6096 15.3476 18.5917 15.3476 18.5561C15.205 18.5026 15.098 18.3957 15.0446 18.3422C15.0267 18.3957 15.0267 18.4491 15.0267 18.4848C15.0089 18.6274 14.9911 18.6987 14.9376 18.6987C14.9198 18.6987 14.9198 18.6987 14.9019 18.6809C14.7415 18.5739 14.5454 18.1461 14.5276 18.1283V18.1105V18.0926C14.6346 17.8966 14.7415 17.6827 14.8485 17.4866C14.9554 17.2549 15.0624 17.0588 15.1337 16.9518L14.7237 16.7379C14.688 16.9162 14.5989 17.1657 14.5276 17.3796C14.492 17.4866 14.4563 17.5757 14.4385 17.647L14.4207 17.7361L14.4028 17.647C14.3137 17.3262 14.2424 16.5418 14.2246 16.5062V16.4884H14.8841L15.2406 16.5062V16.1675L14.8663 16.1853H14.2068V15.6506H13.8146C13.8146 15.704 13.8324 15.8467 13.8503 15.9358L13.8681 16.1675H12.6381L12.1034 16.1853V16.524L12.6025 16.5062H13.8324V16.524C13.8859 17.0053 14.0285 17.8609 14.1355 18.1639V18.1818V18.1996C13.9394 18.5561 13.4581 18.9483 13.3155 19.0552C13.3868 19.0909 13.5116 19.1622 13.6542 19.3048C13.7433 19.1978 14.0998 18.8235 14.2781 18.5561Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M13.7611 18.5204V18.1996C13.3333 18.36 12.5668 18.4848 12.0499 18.5204C12.0677 18.5917 12.139 18.8056 12.1925 18.9482L13.7611 18.5204Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M13.6364 16.8627L13.2799 16.8806H12.7273L12.3708 16.8627L12.3886 17.1836V17.7183L12.3708 18.0749L12.7451 18.057H13.2799L13.6186 18.0749L13.6007 17.6649V17.1836L13.6364 16.8627ZM13.2977 17.7718H12.7273V17.2014H13.2977V17.7718Z"
+                  fill="white" />
+                <path d="M14.4563 15.811L14.7059 16.114L15.0089 15.9358L14.7415 15.6506L14.4563 15.811Z" fill="white"
+                  class="dark:fill-darkbg-font1" />
+                <path
+                  d="M15.8289 19.9109L15.8111 19.394V15.6863L15.8289 15.1872L15.3119 15.2228H12.0856L11.5508 15.205L11.5686 15.7754V19.4474L11.5508 20H11.9608V19.7148H15.4367V19.9109H15.8289ZM11.9608 19.3583V19.3405V15.5615H15.4367V19.3583H11.9608Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M21.319 18.0036C21.4259 18.7522 22.0677 19.4118 22.3885 19.5366C22.4776 19.287 22.6381 19.1266 22.7272 19.0553C21.6933 18.6275 21.622 17.7719 21.622 17.7719V17.754L21.6399 17.7362C21.8894 17.5401 22.1746 17.3797 22.2994 17.3262L21.8894 16.9875C21.4972 17.344 20.8912 17.7719 20.8734 17.7719L20.8377 17.8075L20.8199 17.7719C20.6416 17.4153 20.2851 17.148 20.2673 17.148L20.2138 17.1123L20.2673 17.0767C20.3743 17.0054 20.6595 16.7202 20.6595 16.7202L20.6773 16.7023H21.5685L21.8894 16.7202V16.328L21.5864 16.3458H19.483L19.073 16.328V16.7202L19.4295 16.7023H20.1069L20.0356 16.7736C19.7147 17.1123 19.0908 17.3975 18.2887 17.6114C18.4313 17.7184 18.5026 17.8966 18.5383 17.9679C19.0374 17.8075 19.893 17.344 19.9108 17.344H19.9286H19.9464C20.0534 17.3797 20.1425 17.5045 20.1604 17.5045L20.1782 17.5401L20.1247 17.5223C19.5543 18.1284 18.6096 18.3957 18.3065 18.4849C18.4313 18.5918 18.5026 18.7701 18.5383 18.8414C19.2513 18.6096 20.303 17.8253 20.3208 17.8075L20.3564 17.7897L20.3743 17.8253C20.3921 17.8432 20.4812 17.9501 20.4812 18.0214V18.0392L20.4634 18.0571C20.0891 18.4849 19.3939 19.0731 18.1996 19.3405C18.3422 19.4831 18.4313 19.6613 18.4669 19.7505C19.8395 19.2514 20.5525 18.467 20.5525 18.467L20.606 18.3957L20.6238 18.4849C20.6595 18.8235 20.6238 19.0731 20.4812 19.2335C20.303 19.4296 20.0356 19.4296 19.893 19.4296C19.9999 19.6257 20.0712 19.8396 20.0891 19.9287C20.2317 19.8931 20.7486 19.7326 20.8734 19.5009C21.0516 19.18 21.1051 18.6631 20.9981 18.1997V18.164L21.319 17.9501V18.0036Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M18.3244 15.5437L18.3422 15.8645V16.3993L18.3244 16.7023H18.77V15.9358H22.1747V16.6488H22.6025L22.5846 16.2923V15.8645L22.6025 15.5437L22.2281 15.5615H20.7665V15.5258C20.7308 15.3298 20.6417 15.098 20.6239 15.0089L20.1426 15.098C20.2139 15.2941 20.2495 15.508 20.2495 15.5258V15.5793H18.6987L18.3244 15.5437Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M26.72 19.1979C26.72 19.3762 26.72 19.5366 26.827 19.6614C26.9874 19.8218 27.3618 19.8753 28.0213 19.8396C29.2156 19.7861 29.2512 19.697 29.4473 19.1444C29.4651 19.1088 29.4651 19.0731 29.483 19.0375C29.2869 18.9483 29.1443 18.8414 29.073 18.7879C28.966 19.4475 28.6452 19.4475 28.0569 19.4653H27.9856C27.95 19.4653 27.8965 19.4653 27.8609 19.4653C27.7896 19.4653 27.7361 19.4653 27.6826 19.4653C27.3439 19.4653 27.13 19.3762 27.13 18.9127V17.2371L27.6826 17.0054V18.4492L27.6648 18.9305H28.0926L28.0748 18.4492V16.8806L28.7165 16.6667V17.6828C28.6808 17.9858 28.5917 18.0749 28.2887 18.0749C28.3956 18.2353 28.4313 18.4314 28.4491 18.5205C28.5739 18.5027 29.0552 18.4314 29.0908 18.0571C29.1086 17.861 29.1265 16.2924 29.1265 16.0607C29.0552 16.0785 28.8769 16.1676 28.7521 16.2211L28.0748 16.4885V15.615L28.0926 15.0803H27.6648L27.6826 15.615V16.6132L27.13 16.7915V16.2211L27.1479 15.7933H26.6844L26.7022 16.2211V16.9876H26.6666C26.4883 17.041 26.2744 17.0945 26.1853 17.1123L26.2922 17.5402C26.3635 17.5045 26.5061 17.451 26.6309 17.3975L26.6844 17.3619V19.1088C26.72 19.1444 26.72 19.1801 26.72 19.1979Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M26.2744 18.9305V18.4849L25.7397 18.7344V16.9875H25.9001C26.0071 16.9875 26.1675 17.0054 26.2388 17.0054V16.5597C26.1675 16.5597 26.0071 16.5775 25.9179 16.5775H25.7397V15.7041C25.7397 15.615 25.7575 15.4189 25.7575 15.3298H25.3297C25.3297 15.4011 25.3475 15.5793 25.3475 15.7041V16.5954H25.1871C25.0267 16.5954 24.9375 16.5954 24.8128 16.5775V17.0054C24.8841 17.0054 25.0623 16.9875 25.1871 16.9875H25.3653V18.8414L25.3475 18.8592C25.2049 18.9305 24.991 18.984 24.8306 19.0018C24.8662 19.0909 24.9554 19.3048 24.991 19.5722C25.098 19.4474 25.5079 19.2157 26.2744 18.9305Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M32.9946 19.0196C32.9946 18.8413 32.9768 18.6274 32.9768 18.5383L32.3351 18.8413V17.4688H32.5846L32.8342 17.4866V17.041L32.5668 17.0588H32.3351V15.8467H32.6916L32.9055 15.8645V15.4367L32.6738 15.4545H31.7112L31.4082 15.4367V15.8645L31.729 15.8467H31.9786V17.0588H31.6934L31.426 17.0232V17.4688L31.6755 17.451H31.9786V18.9305H31.9607C31.6399 19.0731 31.3903 19.1265 31.319 19.1265L31.4438 19.6613C32.2281 19.3048 32.8877 19.0552 32.9946 19.0196Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M35.918 19.8752V19.4474L35.508 19.4653H34.5811V18.8235H35.2584L35.6328 18.8414V18.4314L35.2406 18.4492H34.5811V17.8432H35.2228L35.6506 17.861L35.6328 17.5223V15.7041L35.6506 15.2585L35.205 15.2763H33.6007L33.1907 15.2585L33.2085 15.7576V17.4866L33.1907 17.8788L33.6185 17.861H34.2246V18.467H33.6185L33.262 18.4492V18.8414L33.6363 18.8235H34.2246V19.4653H33.1907L32.7986 19.4474V19.8752L33.1907 19.8574H35.4545L35.918 19.8752ZM34.5989 15.6328H35.2584V16.3815H34.5989V15.6328ZM34.5989 16.7202H35.2584V17.4866H34.5989V16.7202ZM34.2246 17.4866H33.6007V16.7202H34.2246V17.4866ZM34.2246 16.3637H33.6007V15.615H34.2246V16.3637Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path d="M0 0H8.98395V12.8699H0V0ZM7.6827 1.30125H1.30125V11.5686H7.6827V1.30125Z" fill="#FFCC00" />
+                <path
+                  d="M14.8841 5.77542H14.3315C13.6007 4.74156 12.8699 3.70769 12.139 2.54905V5.77542H11.5151V1.26562H12.0677C12.7986 2.29949 13.5294 3.31553 14.2424 4.47418H14.2602V1.26562H14.8841V5.77542Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M16.3458 3.99289C16.524 3.40466 16.7023 2.85208 16.8627 2.15689H16.8805C17.0588 2.85208 17.2192 3.40466 17.3796 3.99289H16.3458ZM16.6488 1.26562L15.098 5.7576H15.7575L16.1497 4.52765H17.5044L17.8609 5.7576H18.7165L17.2905 1.26562H16.6488Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path d="M19.4474 5.77542V1.87168H18.2709V1.26562H21.4082V1.87168H20.2139V5.77542H19.4474Z" fill="white"
+                  class="dark:fill-darkbg-font1" />
+                <path d="M22.4242 1.26562H21.6577V5.7576H22.4242V1.26562Z" fill="white" />
+                <path
+                  d="M24.795 5.20503C23.9928 5.20503 23.7076 4.31376 23.7076 3.45815C23.7076 2.62036 24.0285 1.83605 24.795 1.83605C25.5615 1.83605 25.8823 2.62036 25.8823 3.45815C25.8823 4.31376 25.5971 5.20503 24.795 5.20503ZM24.795 5.84674C25.9714 5.84674 26.7023 4.79505 26.7023 3.45815C26.7023 2.19255 25.9001 1.19434 24.795 1.19434C23.6898 1.19434 22.8877 2.19255 22.8877 3.45815C22.8877 4.79505 23.6185 5.84674 24.795 5.84674Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M30.5347 5.77542H29.9821C29.2513 4.74156 28.5204 3.70769 27.7896 2.54905V5.77542H27.1657V1.26562H27.7183C28.4491 2.29949 29.18 3.31553 29.893 4.47418H29.9108V1.26562H30.5347V5.77542Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M32.0142 3.99289C32.1925 3.40466 32.3707 2.85208 32.5312 2.15689H32.549C32.7272 2.85208 32.8877 3.40466 33.0659 3.99289H32.0142ZM32.2994 1.26562L30.7486 5.7576H31.426L31.8181 4.52765H33.1729L33.5294 5.7576H34.385L32.959 1.26562H32.2994Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path d="M34.5989 1.26562H35.3653V5.16936H36.8983V5.77542H34.5989V1.26562Z" fill="white" />
+                <path
+                  d="M14.4029 9.5365V11.3903C13.9929 11.5508 13.5651 11.6577 13.1194 11.6577C11.8004 11.6577 10.9626 10.6238 10.9626 9.30477C10.9626 8.07483 11.8004 7.00531 13.1551 7.00531C13.5651 7.00531 13.9929 7.16574 14.2424 7.34399L13.9929 7.87875C13.779 7.75397 13.4581 7.64702 13.1729 7.64702C12.353 7.64702 11.7825 8.28873 11.7825 9.3226C11.7825 10.3921 12.4243 11.016 13.0838 11.016C13.2977 11.016 13.4581 10.9982 13.6186 10.909V9.51868H14.4029V9.5365Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M17.1657 7.70048H15.8823V8.93043H17.1479V9.53649H15.8823V10.9982H17.3975V11.5864H15.1158V7.09442H17.1657V7.70048Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M19.5366 11.0339C18.7344 11.0339 18.4492 10.1426 18.4492 9.28701C18.4492 8.46704 18.7701 7.6649 19.5366 7.6649C20.3031 7.6649 20.6239 8.44922 20.6239 9.28701C20.6239 10.1426 20.3387 11.0339 19.5366 11.0339ZM19.5366 11.6756C20.713 11.6756 21.4439 10.6239 21.4439 9.28701C21.4439 8.02141 20.6417 7.02319 19.5366 7.02319C18.4314 7.02319 17.6293 8.02141 17.6293 9.28701C17.6293 10.6239 18.3601 11.6756 19.5366 11.6756Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M25.1515 9.5365V11.3903C24.7415 11.5508 24.3137 11.6577 23.868 11.6577C22.549 11.6577 21.7112 10.6238 21.7112 9.30477C21.7112 8.07483 22.549 7.00531 23.9037 7.00531C24.3137 7.00531 24.7415 7.16574 24.991 7.34399L24.7415 7.87875C24.5276 7.75397 24.2067 7.64702 23.9215 7.64702C23.1016 7.64702 22.5311 8.28873 22.5311 9.3226C22.5311 10.3921 23.1729 11.016 23.8324 11.016C24.0463 11.016 24.2067 10.9982 24.3672 10.909V9.51868H25.1515V9.5365Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M26.631 7.70055H26.9697C27.4331 7.70055 27.6827 7.96792 27.6827 8.43138C27.6827 9.03744 27.3083 9.30482 26.9518 9.32265C26.8805 9.32265 26.7023 9.34047 26.631 9.34047V7.70055ZM28.5918 11.5865L27.6827 9.7148C28.1818 9.44742 28.467 8.91267 28.467 8.37791C28.467 7.50447 27.9322 7.07666 27.0766 7.07666H25.8823V11.5686H26.6488V9.87523H26.9875H27.0053L27.7361 11.5686H28.5918V11.5865Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M29.8574 9.82169C30.0356 9.23346 30.2139 8.68087 30.3743 7.98569H30.3921C30.5704 8.68087 30.7308 9.23346 30.8912 9.82169H29.8574ZM30.1604 7.09442L28.6096 11.5864H29.287L29.6791 10.3565H31.0338L31.3903 11.5864H32.246L30.8199 7.09442H30.1604Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M33.2442 11.5864H32.4777V7.09442H33.672C34.5276 7.09442 35.0624 7.52223 35.0624 8.39567C35.0624 9.16216 34.5098 9.89299 33.5829 9.89299H33.2264V9.34041C33.262 9.34041 33.4759 9.32258 33.565 9.32258C33.9394 9.30476 34.2959 9.03738 34.2959 8.43132C34.2959 7.96786 34.0463 7.70048 33.5829 7.70048H33.2264V11.5864H33.2442Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M38.6452 11.5864H37.8787V9.42953H36.2744V11.5864H35.5079V7.09442H36.2744V8.82348H37.8787V7.11225H38.6452V11.5864Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path d="M40.1604 7.09442H39.3939V11.5864H40.1604V7.09442Z" fill="white" />
+                <path
+                  d="M43.6185 7.9144C43.4403 7.80745 43.1194 7.66485 42.8342 7.66485C42.0499 7.66485 41.4795 8.30656 41.4795 9.34042C41.4795 10.4099 42.1034 11.0338 42.852 11.0338C43.1551 11.0338 43.4224 10.9447 43.6185 10.8021L43.8324 11.3547C43.6007 11.5151 43.1907 11.6577 42.8164 11.6577C41.4973 11.6577 40.6595 10.6238 40.6595 9.30477C40.6595 8.07483 41.4795 7.00531 42.8342 7.00531C43.2264 7.00531 43.6007 7.16574 43.8681 7.34399L43.6185 7.9144Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+              </svg>
+            </span>
+            <span class="pb-3 px-5">
+              <svg width="80" class="sm:w-[80px] w-[50px]" height="20" viewBox="0 0 172 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.114 19.5963H28.361L31.7102 0.427612H25.4631L24.228 7.29222H18.8123L20.0475 0.427612H13.8004L10.4512 19.5963H16.6983L17.9572 12.4229H23.3729L22.114 19.5963Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M35.2494 0.403813L33.3492 11.0689C33.1829 11.9003 33.1117 12.7079 33.1117 13.4679C33.1117 19.1212 38.0523 19.9763 41.0214 19.9763C47.2447 19.9763 49.9288 17.9098 50.9027 12.3278L52.9929 0.380066H46.7459L44.9644 10.4038C44.3943 13.5392 43.9905 15.1782 41.6628 15.1782C40.1426 15.1782 39.4062 14.3706 39.4062 12.7079C39.4062 12.0665 39.5012 11.2827 39.6913 10.3088L41.4965 0.380066H35.2494V0.403813Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M86.0095 19.5961H92.2565L93.1354 14.6555H96.0808C101.52 14.6555 104.537 11.7102 104.537 6.34199C104.537 2.56527 101.924 0.403748 97.3397 0.403748H89.3587L86.0095 19.5961ZM95.7482 9.92869H93.943L94.7743 5.41563H96.4608C97.8385 5.41563 98.5748 6.10447 98.5748 7.36337C98.5748 8.95482 97.5059 9.92869 95.7482 9.92869Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M116.675 0C109.881 0 105.819 4.3943 105.819 11.7815C105.819 16.9121 109.05 20 114.466 20C121.259 20 125.321 15.6057 125.321 8.21853C125.344 3.06413 122.114 0 116.675 0ZM114.846 15.0356C113.23 15.0356 112.28 13.8717 112.28 11.924C112.28 11.1876 112.352 10.5463 112.494 9.80998C112.969 7.29216 113.777 4.98812 116.318 4.98812C117.933 4.98812 118.884 6.15202 118.884 8.09977C118.884 8.83611 118.812 9.47744 118.67 10.2138C118.195 12.7078 117.387 15.0356 114.846 15.0356Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M147.055 19.5963H153.302L155.772 5.55826H160.475L161.378 0.427612H145.392L144.489 5.55826H149.477L147.055 19.5963Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M136.698 7.50594C134.727 6.88836 133.919 6.62708 133.919 5.70071C133.919 5.08314 134.323 4.34679 135.511 4.34679C136.389 4.34679 137.126 4.84561 137.411 5.58195L142.922 4.08551C142.28 1.37767 139.952 0 135.938 0C128.385 0 127.791 5.05938 127.791 6.60332C127.791 9.73872 129.454 11.6627 133.064 12.6603C134.014 12.9216 135.107 13.2066 135.107 14.2518C135.107 15.0831 134.489 15.6057 133.42 15.6057C132.446 15.6057 131.401 15.0356 131.045 14.038L125.606 15.5107C126.199 18.3611 128.884 19.9763 133.088 19.9763C136.294 19.9763 141.663 19.1211 141.663 13.3254C141.686 10.4276 140.047 8.52732 136.698 7.50594Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path d="M6.95962 19.5963L10.3325 0.427612H0V19.5963H6.95962Z" fill="white"
+                  class="dark:fill-darkbg-font1" />
+                <path d="M164.062 0.427612L160.713 19.5963H171.045V0.427612H164.062Z" fill="white"
+                  class="dark:fill-darkbg-font1" />
+                <path
+                  d="M60.4513 13.9429H65.7007L66.5558 9.12109H61.3064L61.9002 5.55814H69.2399L70.1425 0.403748H56.5558L53.2067 19.5962H59.4537L60.4513 13.9429Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+                <path
+                  d="M76.8172 13.9429H82.0903L82.9454 9.12109H77.696L78.2899 5.55814H85.6295L86.5321 0.403748H72.9454L69.5963 19.5962H75.8433L76.8172 13.9429Z"
+                  fill="white" class="dark:fill-darkbg-font1" />
+              </svg>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="start" class="py-section bg-color-dark1 dark:bg-darkbg-light1">
+    <div class="container">
+      <h2 class="text-color-light1 dark:text-darkbg-font1">Not sure where to start?</h2>
+      <p class="desc text-color-dark3 dark:text-darkbg-font2">Programs offer day-to-day guidance on an interactive
+        calendar to keep you on
+        track.</p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-color-dark4 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Workout Videos</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Access to hundreds of free, full-length workout videos.
+              </p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark5 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Workout Programs</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Affordable and effective workout programs.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark4 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Meal Plans</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Plans built with registered dietitians and
+                nutritionists.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark6 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">WO Plus ALL ACCESS</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Add powerful features to your membership.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark4 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Workout Videos</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Access to hundreds of free, full-length workout videos.
+              </p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark5 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Workout Programs</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Affordable and effective workout programs.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark4 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">Meal Plans</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Plans built with registered dietitians and
+                nutritionists.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-color-dark6 rounded-xl dark:bg-darkbg-light2">
+            <h6 class="text-color-light1 pb-5 dark:text-darkbg-font3">WO Plus ALL ACCESS</h6>
+            <div class="flex justify-between items-center">
+              <p class="text-color-dark3 dark:text-darkbg-font1">Add powerful features to your membership.</p>
+              <i class="fa-solid fa-arrow-right text-color-light1 dark:text-darkbg-font1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <div id="work" class="py-section bg-color-dark1 dark:bg-darkbg-light1">
+    <div class="container grid sm:grid-cols-2 grid-cols-1 sm:gap-20 items-center">
+      <div class="desc mb-[15px] sm:mb-[0]">
+        <h2 class="text-color-light1 mb-5 dark:text-darkbg-font3">Work out at home for free.</h2>
+        <p class="text-color-dark3 mb-5 dark:text-darkbg-font2">We believe fitness should be accessible to everyone,
+          everywhere, regardless of
+          income or access to a gym.
+          With
+          hundreds
+          of professional workouts, healthy recipes and informative articles, as well as one of the most positive
+          communities on
+          the web, you’ll have everything you need to reach your personal fitness goals – for free!</p>
+        <a href="" class="text-color-primary5">See More <i
+            class="fa-solid fa-arrow-right text-color-primary5 ml-2"></i></a>
+      </div>
+      <div class="image flex justify-center">
+        <img class="w-[70%] sm:w-[100%]" src="./images/photo-1615872329955-c28d0bf453fd 1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="training" class="py-section bg-color-dark1 dark:bg-darkbg-light1">
+    <div class="container grid grid-cols-1 sm:gap-20 sm:grid-cols-2 items-center">
+      <div class="image flex justify-center mb-10 sm:mb-[0]">
+        <img class="w-[70%] sm:w-[100%]" src="./images/photo-1618841507238-4f5c65067ff8 1.png" alt="">
+      </div>
+      <div class="desc">
+        <h2 class="text-color-light1 mb-5 dark:text-darkbg-font3">Get more with low-cost training programs and advanced
+          features.</h2>
+        <p class="text-color-dark3 mb-5 dark:text-darkbg-font2">We believe fitness should be accessible to everyone,
+          everywhere, regardless of
+          income or access to a gym. With hundreds
+          of professional workouts, healthy recipes and informative articles, as well as one of the most positive
+          communities on
+          the web, you’ll have everything you need to reach your personal fitness goals – for free!</p>
+        <a href="" class="text-color-primary5">See More <i
+            class="fa-solid fa-arrow-right text-color-primary5 ml-2"></i></a>
+      </div>
+    </div>
+  </div>
+  <div id="membership" class="py-section bg-color-dark1 dark:bg-darkbg-light1">
+    <div class="container">
+      <h2 class="header-section dark:text-darkbg-font3">Membership</h2>
+      <div class="wrapper grid grid-cols-1 sm:grid-cols-2 sm:gap-x-20 gap-y-10">
+        <div class="free bg-color-dark5 dark:bg-darkbg-light2 py-[60px] px-[50px] flex flex-col justify-between">
+          <div>
+            <h3 class="text-color-light1 text-[30px] font-[600] pb-[34px] text-center dark:text-darkbg-font3">Join for
+              Free</h3>
+            <p class="text-color-dark3 text-[18px] font-[400] pb-[15px] dark:text-darkbg-font3">Reach your fitness
+              goals or maintain your
+              healthy
+              lifestyle
+              with professional
+              training and support from a
+              positive and
+              active online community.</p>
+            <ul class="text-color-dark3 list-disc list-inside text-[16px] font-[400] dark:text-darkbg-font2">
+              <li>~600 Full-Length Workout Videos</li>
+              <li>Customizable Calendar</li>
+              <li>Healthy Recipes</li>
+              <li>Health and Fitness Articles</li>
+              <li>Positive and Supportive Online Community</li>
+              <li>No Credit Card Needed</li>
+            </ul>
+          </div>
+          <div>
+            <button class="text-color-primary5 text-[14px] font-[500]">See More<i
+                class="fa-solid fa-arrow-right text-color-light1 ml-2 text-[13px] text-color-primary5"></i></button>
+          </div>
+        </div>
+        <div class="plus bg-color-dark4 dark:bg-darkbg-light2 py-[60px] px-[50px] flex flex-col justify-between">
+          <div>
+            <h3 class="text-color-light1 text-[30px] font-[600] pb-[34px] text-center dark:text-darkbg-font3">WO Plus
+            </h3>
+            <p class="text-color-dark3 text-[18px] font-[400] pb-[15px] dark:text-darkbg-font3">WO Plus includes
+              everything you get with a free
+              membership
+              and adds brand new
+              convenience features, fitness tools, and
+              unique content.</p>
+            <ul class="text-color-dark3 list-disc list-inside text-[16px] font-[400] pb-[32px] dark:text-darkbg-font2">
+              <li>Ads-Free Website and Videos</li>
+              <li>Surprise Me Workout Selection Tool</li>
+              <li>Statistics for Your Activities</li>
+              <li>Enter and Track Custom Workouts</li>
+              <li>FB Plus Exclusive Workouts</li>
+              <li>Trackers to See Your Progress</li>
+              <li>FB Plus Content and Challenges</li>
+              <li>Video Tags</li>
+              <li>FB Plus Routines</li>
+              <li>Rest Day Complete</li>
+            </ul>
+          </div>
+          <button class="bg-color-primary5 rounded-lg text-color-light1 px-[14px] py-[4px] w-fit"><a href="">Join Club
+              Now!</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back-top mr-5 mb-5 hidden justify-end fixed bottom-0 right-0 z-40">
+    <button class="bg-color-light1 p-[8px] font-[600] text-[15px] rounded-sm" id="backToTop">Back to Top<i
+        class="fa-solid fa-chevron-up pl-3"></i></button>
+  </div>
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="./javascript/main.js"></script>
+</body>
+
+</html>
